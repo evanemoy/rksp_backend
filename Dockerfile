@@ -23,7 +23,11 @@ COPY --from=build /app/build/libs/*.jar app.jar
 # Set environment variables
 # ENV SPRING_PROFILES_ACTIVE=prod
 # ENV JAVA_OPTS="-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0"
-
+ENV DB_HOST="dpg-d0k5o63e5dus73bg10ig-a"
+ENV DB_PORT="5432"
+ENV DB_NAME="projects_zd43"
+ENV DB_USER="root"
+ENV DB_PASSWORD="lqeyxgvLCQkkoX3vtXoQbOcn04577vZn"
 # Expose the default Spring Boot port
 EXPOSE 8080
 
